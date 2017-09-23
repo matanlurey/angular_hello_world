@@ -1,7 +1,13 @@
 # angular_hello_world
 
-Just displays `Hello World`.
+An example of AngularDart's "Hello World" with optimizations enabled.
 
-This project exists just to use `pub build`, and analyze the dump info.
+Produces a `51.82kb` binary after `pub build` and g-zipping `main.dart.js`:
+
+```bash
+$ pub build
+$ gzip build/web/main.dart.js
+$ ls -l build/web/main.dart.js.gz
+```
 
 **NOTE**: This is not an official Google or Dart project.
